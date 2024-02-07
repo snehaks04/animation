@@ -1,0 +1,34 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+div{
+
+background-image: url("https://images.unsplash.com/photo-1521730365094-d6978fa2ac8d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    border: 3px solid black;
+
+    background-size: cover;
+    background-position: center;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    animation: bubble 3s cubic-bezier(0.8, 1.02, 0.82, 1.2) alternate-reverse infinite;
+}
+
+@keyframes bubble{
+    0%{
+        border-top-left-radius:3rem;
+    }
+    25%{
+      
+        border-bottom-right-radius:4rem;
+    }
+    50%{
+    border-bottom-left-radius: 3rem;
+    }
+    100%{
+      border-top-right-radius:4rem;
+}
+   
+}
